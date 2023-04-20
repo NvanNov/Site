@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h5 class="text-secondary">И на Марсе будут яблони цвести!</h5>
+    {% if "инженер" in profession or "строитель" in profession %}
+        <h2>Инженерные тренажеры</h2>
+        <img src="/static/img/2.png" alt="здесь должна была быть картинка, но не нашлась">
+    {% else %}
+        <h2>Научные симуляторы</h2>
+<img src="/static/img/1.png" alt="здесь должна была быть картинка, но не нашлась">
+    {% endif %}
+
+{% endblock %}
